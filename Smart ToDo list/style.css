@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right,  #595cff,#c6f8ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app {
+    width: 650px;
+    background: #d9edf6;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title h2 {
+    margin: 0;
+    color:#1a1c7a;
+}
+
+.title p {
+    font-size: 12px;
+    color: gray;
+}
+
+.actions button {
+    margin-left: 10px;
+    border: none;
+    background: #eee;
+    border-radius: 10px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.input-section input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+#taskInput {
+    flex: 1;
+}
+
+#addTask {
+    background: #7b5cff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#addTask:hover {
+    background: #5a3ee0;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.filter-btn {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filter-btn.active {
+    background: #7b5cff;
+    color: white;
+}
+
+.task-list {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 12px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.task-info {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.task-info h4 {
+    margin: 0;
+}
+
+.completed h4 {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.tag {
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.tag.important {
+    background: #ffd6db;
+    color: #b30021;
+}
+
+.tag.today {
+    background: #d0f0ff;
+    color: #0077b6;
+}
+
+.task-date {
+    font-size: 12px;
+    color: gray;
+    margin-right: 10px;
+}
+
+.task-actions button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 13px;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.motivation {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
